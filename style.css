@@ -13,4 +13,101 @@
     --annimation-duration: 300ms;
 }
 
+* {
+    box-sizing: border-box;
+    /* padding이나 border가 witdh나 height에 포함될 수 있도록.*/
+}
+
+ul {
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+button {
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.list {
+    width: 400px;
+    margin: auto; /*body에만 center를 주면 오른쪽에만 margin이 들어가므로 auto 설정*/
+    background-color: rgb(234, 244, 248);
+    border-radius: 5px;
+}
+
+.header {
+    height: 40px;
+    padding: 6px;
+    font-size: large;
+    background: #DFF3F1;
+    background: -moz-linear-gradient(-45deg, #DFF3F1 0%, #9FD5D4 100%, #3FCD5D 100%);
+    background: -webkit-linear-gradient(-45deg, #DFF3F1 0%, #9FD5D4 100%, #3FCD5D 100%);
+    background: linear-gradient(135deg, #DFF3F1 0%, #9FD5D4 100%, #3FCD5D 100%);
+    border-radius: 5px 5px 0 0;
+}
+
+.items{
+    height: 500px;
+    overflow-y: auto; /*안에 내용물이 많아지면 내부 스크롤 생김*/
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 32px; /*위아래 8px 양옆 32px*/
+}
+
+.item__divider {
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto;
+}
+
+.item__delete {
+    font-size: 15px;
+    transition: var(--annimation-duration) ease-in;
+}
+
+.item__delete:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.footer {
+    background: #DFF3F1;
+    background: -moz-linear-gradient(-45deg, #DFF3F1 0%, #9FD5D4 100%, #3FCD5D 100%);
+    background: -webkit-linear-gradient(-45deg, #DFF3F1 0%, #9FD5D4 100%, #3FCD5D 100%);
+    background: linear-gradient(135deg, #DFF3F1 0%, #9FD5D4 100%, #3FCD5D 100%);
+    border-radius: 0 0 5px 5px;
+}
+
+.footer__infut{
+    width: 100%;
+    height: 32px;
+    border: none;
+    outline: none; /*선택하였을 때 none*/
+    font-size: 16px;
+    padding : 0 16px;
+}
+
+.footer__button{
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(54, 135, 157);
+    font-size: 25px;
+    border-radius: 50%;
+    transition: var(--annimation-duration) ;
+}
+
+.footer__button:hover {
+    transform: scale(1.1);
+}
 
