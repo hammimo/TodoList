@@ -1,0 +1,16 @@
+:root{
+    /* color */ 
+    --color-green: #E0FECB;
+    --color-darkGreen: #DBE6B8;
+    --color-yelloBeige: #FCFBD6;
+    --color-beige: #E6DFB8;
+    --color-yello: #FEF2CB;
+    --color-light-grey: #dfdfdf;
+    /* size */
+    --size-listBtn:17px;
+
+    /* annimation */
+    --annimation-duration: 300ms;
+}
+
+
