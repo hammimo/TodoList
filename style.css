@@ -16,6 +16,7 @@
 * {
     box-sizing: border-box;
     /* padding이나 border가 witdh나 height에 포함될 수 있도록.*/
+    font-family: 'Gowun Dodum', sans-serif;
 }
 
 ul {
