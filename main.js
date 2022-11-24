@@ -71,7 +71,7 @@ addBtn.addEventListener('click', () => {
     onAdd();
 });
 
-input.addEventListener('keypress', (event) => { // enter를 쳐도 입력 가능하도록 !
+input.addEventListener('keydown', (event) => { // enter를 쳐도 입력 가능하도록 !
  if(event.key === 'Enter'){
     onAdd();
  }
